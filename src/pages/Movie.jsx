@@ -14,7 +14,14 @@ loading
   ? <p className='text-center py-2'>Cargando...</p>
   : (
     <>
-      <div className='card mb-3 mt-2 mx-2' style={{ maxWidth: 'max - content' }}>
+
+      <nav class='navbar bg-light '>
+        <div class='container-fluid justify-content-between '>
+          <a class='navbar-brand text-center mx-2' href='/'>The Movie</a>
+          <a class='navbar-brand text-center' href='/'>Home</a>
+        </div>
+      </nav>
+      <div className='card mb-3 mt-4 mx-2 shadow p-3 mb-5 bg-body rounded' style={{ maxWidth: 'max - content' }}>
         <div className='row g-0'>
           <div className='col-md-3 mt-5'>
             <img src={data.image && data.image.medium} className=' img-fluid rounded-start w-100 py-1 px-1 ps-1 ' alt='No existe imagen' />
@@ -25,7 +32,6 @@ loading
               <h5 className='card-title py-3'>Rating: {data.rating.average ? data.rating.average : 'No existe rating'}</h5>
               <h5 className='card-title'>Genre: {data.genres[0]}</h5>
               <p className='card-text fs-3 py-3'>{data.summary}</p>
-              {/* <p className='card-text'><small className='text-muted'>Status: {data.status}</small></p> */}
             </div>
           </div>
         </div>
@@ -40,6 +46,7 @@ loading
         <h1 className=' text-center  mt-5  '>Cast</h1>
         <Cast id={id} />
       </section>
+
     </>
 
     )
