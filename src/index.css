@@ -1,11 +1,6 @@
 aside{
   display: flex;
 }
-/* #root{
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 .size-imageCast{
 width: 210px;
 height: 295px;

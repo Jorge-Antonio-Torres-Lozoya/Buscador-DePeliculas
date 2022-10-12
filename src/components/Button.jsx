@@ -1,6 +1,4 @@
-// import axios from 'axios'
 import { useState } from 'react'
-// onChangeLoading,
 const Button = ({ getInput, onclickFetch, onChangeLoading }) => {
   const [inputSearch, setInputSearch] = useState('')
 

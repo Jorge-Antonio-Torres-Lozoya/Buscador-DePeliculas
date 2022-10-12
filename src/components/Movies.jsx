@@ -10,9 +10,7 @@ const Movies = () => {
   const [input, setInput] = useState()
   const [onClickButton, setOnClickButton] = useState()
   const [items, setItems] = useState([])
-  // const [dataLength, setDataLength] = useState('a')
   const [isLoading, setIsLoading] = useState(true)
-  //   const [id, setId] = useState()
 
   const { data } = useGetData('https://api.tvmaze.com/shows?page=1')
   if (onClickButton) {

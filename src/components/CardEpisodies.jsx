@@ -1,5 +1,3 @@
-// import useGetData from '../hooks/useGetData'
-
 const CardEpisodies = ({ name, season, summary, image }) => {
   return (
     <div className='card mt-4 mx-4  shadow p-3 mb-5 bg-body rounded'>
