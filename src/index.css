@@ -8,3 +8,11 @@ height: 295px;
 .sizeCardBody{
   width: 210px;
 }
+.sizeImg{
+  width:213px;
+  height:295px
+}
+.sizeCard{
+  height:390px;
+  width:215px;
+}
